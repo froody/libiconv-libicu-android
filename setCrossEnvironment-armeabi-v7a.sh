@@ -19,6 +19,7 @@ fi
 NDK=`which ndk-build`
 NDK=`dirname $NDK`
 NDK=`readlink -f $NDK`
+NDK="/Users/tbirch/src/android-ndk-r10e"
 
 grep "64.bit" "$NDK/RELEASE.TXT" >/dev/null 2>&1 && MYARCH="${MYARCH}_64"
 
